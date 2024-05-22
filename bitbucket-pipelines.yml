@@ -1,0 +1,13 @@
+image: node:20
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Checking Prequisites
+            caches:
+              - node
+            script:
+              - mv package.json pkg.backup.json
+              - npm install --no-save "file:node_build/strix-server.tgz"
+              - node server/fs-checker.js

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 
 import { NEED_HELP_LIST } from '@/app/ppid/home/$action/constant'
+import { ChevronRightIcon } from '@/lib/global/svg'
 
 export async function SE_HomeNeedHelp() {
     return (
@@ -23,8 +24,9 @@ export async function SE_HomeNeedHelp() {
                             <p className={styles.cardDescription}>
                                 {res.description}
                             </p>
-                            <Link href="#">
+                            <Link className="flex items-center gap-1 " href="#">
                                 <p className={styles.cardLink}>{res.link}</p>
+                                <ChevronRightIcon className="stroke-blue-secondary" />
                             </Link>
                         </div>
                     </section>
@@ -35,7 +37,7 @@ export async function SE_HomeNeedHelp() {
 }
 
 const styles = {
-    container: 'my-20 mx-14 lg:mx-24 3xl:mx-56',
+    container: 'my-20 mx-6 sm:mx-14 lg:mx-24 3xl:mx-56',
     heading: 'text-center text-4xl mb-8',
     grid: 'grid grid-cols-1 lg:grid-cols-3 gap-8',
     card: 'p-6 bg-white  shadow-md grid  gap-2',

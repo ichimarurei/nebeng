@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
-import Footer from '@/lib/global/components/footer'
-import Navbar from '@/lib/global/components/navbar'
+import { SE_FooterMain } from './$element/server.footer.main'
+import { SE_NavbarMain } from './$element/server.navbar.main'
 
 export const metadata: Metadata = {
     title: 'PPID-Beranda - BRI PPID - Bank BRI | Melayani Dengan Setulus Hati',
@@ -15,9 +15,9 @@ export default function PPIDLayout({
 }>) {
     return (
         <>
-            <Navbar />
+            <SE_NavbarMain />
             {children}
-            <Footer />
+            <SE_FooterMain />
         </>
     )
 }

@@ -15,6 +15,10 @@ const config: Config = {
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'custom-gradient':
                     'linear-gradient(180deg, rgba(199, 7, 64, 0) 0%, rgba(199, 7, 64, 1) 100%)',
+                'custom-gradient-2':
+                    'linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgb(148, 24, 61) 100%) !important',
+                'custom-gradient-3':
+                    'linear-gradient(180deg, rgba(0, 0, 0, 0.5) 50%, #94183d 100%) !important',
             },
             fontSize: {
                 // heading s
@@ -275,6 +279,8 @@ const config: Config = {
                 'orange-primary': '#f27224',
                 'red-primary': '#c70740',
                 'blue-secondary': '#65AFDF',
+                'blue-tertiary': '#627D92',
+                'gray-primary': '#979797',
             },
         },
     },

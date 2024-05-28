@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { forwardRef } from 'react'
 
 import { T_ProfileCardProps } from '@/app/ppid/home/$action/constant'
+import { ChevronRightIcon } from '@/lib/global/svg'
 
 function CE_HomeProfileCard(
     { activeTab }: T_ProfileCardProps,
@@ -20,7 +21,10 @@ function CE_HomeProfileCard(
                         dari masyarakat. Keterbukaan informasi ini juga telah
                         diatur dalam Undang-undang 14 tahun 2008.
                     </p>
-                    <button className={styles.button}>Lihat Detail</button>
+                    <button className={styles.button}>
+                        Lihat Detail
+                        <ChevronRightIcon className={styles.chevronIcon} />
+                    </button>
                 </div>
             )
         case 1:
@@ -79,7 +83,10 @@ function CE_HomeProfileCard(
                             height={0}
                         />
                     </div>
-                    <button className={styles.button}>View Announcement</button>
+                    <button className={styles.button}>
+                        View Announcement
+                        <ChevronRightIcon className={styles.chevronIcon} />
+                    </button>
                 </div>
             )
     }
@@ -93,7 +100,7 @@ const styles = {
     title: 'text-3xl font-light mb-8',
     description: 'text-l-regular leading-7',
     subTitle: 'text-l-medium text-blue-primary',
-    button: 'text-red-primary pt-4',
+    button: 'text-red-primary pt-4 flex items-center gap-2',
     newsContainer: 'bg-white flex gap-6 overflow-x-auto py-8 px-5',
     newsCard: 'max-w-sm bg-white shadow-lg p-5 min-w-[260px]',
     newsImage: 'object-center object-none w-50 h-60',
@@ -102,4 +109,5 @@ const styles = {
     newsDate: 'text-m-regular mb-4',
     announcementCard: 'px-5 py-7 w-full rounded-ee-[60px] shadow-md bg-white',
     announcementEmpty: 'flex items-center justify-center',
+    chevronIcon: 'stroke-red-primary',
 }

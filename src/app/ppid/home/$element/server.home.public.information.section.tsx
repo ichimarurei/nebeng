@@ -4,7 +4,7 @@ import { PUBLIC_INFORMATION_CONTENT } from '@/app/ppid/home/$action/constant'
 
 export async function SE_HomePublicInformationSection() {
     return (
-        <section className="bg-[#dce6f2]">
+        <section className="bg-[#dce6f2] mt-20">
             <div className="w-full container mx-auto px-16 md:px-24 xl:px-36 p-14">
                 <p className="text-[2rem] font-normal text-center">
                     Keterbukaan Informasi Publik

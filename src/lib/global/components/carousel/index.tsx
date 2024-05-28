@@ -5,7 +5,7 @@ import Button from '@/lib/global/components/button'
 type T_Slide = {
     title: string
     description?: string
-    button_title: string
+    button_title?: string
     image_src: string
 }
 
@@ -56,7 +56,7 @@ export default function Carousel({ slides }: T_CarouselProps) {
             </div>
             <section className=" mx-auto absolute top-[27%] left-20 z-40">
                 <div className="">
-                    <h1 className="max-w-xl text-white text-xxl-regular text-[35px] mb-[14px] leading-[44px]">
+                    <h1 className="max-w-xl text-white text-xxl-regular !text-[35px] mb-3 leading-[44px]">
                         {slides[current].title}
                     </h1>
                     {slides[current]?.description && (
@@ -64,11 +64,13 @@ export default function Carousel({ slides }: T_CarouselProps) {
                             {slides[current].description}
                         </p>
                     )}
-                    <Button intent="warning">
-                        <p className="text-white">
-                            {slides[current].button_title}
-                        </p>
-                    </Button>
+                    {slides[current]?.button_title && (
+                        <Button intent="warning">
+                            <p className="text-white">
+                                {slides[current].button_title}
+                            </p>
+                        </Button>
+                    )}
                 </div>
             </section>
             <div className="absolute bottom-0 w-full h-full opacity-40 bg-custom-gradient" />

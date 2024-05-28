@@ -1,6 +1,5 @@
-if (typeof process.env.ELA_APM_PLC !== 'undefined')
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    require('elastic-apm-node').start()
+import ElasticNode from 'elastic-apm-node'
+if (typeof process.env.ELA_APM_PLC !== "undefined") ElasticNode.start()
 /** @type {import('next').NextConfig} */
 // import { programAssesmentCheck } from '@strix/server'
 
@@ -20,6 +19,8 @@ if (image_origins) {
 }
 
 const nextConfig = {
+    basePath: (process.env.SUBDIR ?? "").length > 0 ? process.env.SUBDIR : undefined,
+    assetPrefix: (process.env.SUBDIR ?? "").length > 0 ? process.env.SUBDIR : undefined,
     reactStrictMode: process.env.ENVIRONMENT_LEVEL > 1 ? true : false,
     poweredByHeader: false,
     productionBrowserSourceMaps: false,

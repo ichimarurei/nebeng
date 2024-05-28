@@ -161,6 +161,18 @@ module.exports = {
                 ],
             },
         },
+        {
+            files: ['**/constant.ts', '**/constant.tsx'],
+            rules: {
+                '@typescript-eslint/naming-convention': [
+                    'error',
+                    {
+                        selector: 'variable',
+                        format: ['snake_case', 'UPPER_CASE'],
+                    },
+                ],
+            },
+        },
     ],
     ignorePatterns: ['src/assets/less/*'],
 }

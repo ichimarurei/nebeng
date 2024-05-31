@@ -1,0 +1,187 @@
+{
+    "main": "home",
+    "menu": [
+        {
+            "mode": "menu",
+            "title": "Introduction",
+            "file": "pages/index"
+        },
+        {
+            "mode": "menu",
+            "title": "Folders & Files Structures",
+            "file": "pages/folder/index",
+            "menu": [
+                {
+                    "mode": "sparator"
+                },
+                {
+                    "id": "folder/structures",
+                    "mode": "menu",
+                    "title": "1 - Root ",
+                    "file": "pages/folder/main"
+                },
+                {
+                    "id": "folder/structures",
+                    "mode": "menu",
+                    "title": "2 - Feature ",
+                    "file": "pages/folder/feature"
+                },
+                {
+                    "id": "folder/structures",
+                    "mode": "menu",
+                    "title": "3 - Model ",
+                    "file": "pages/folder/model"
+                },
+                {
+                    "id": "folder/structures",
+                    "mode": "menu",
+                    "title": "4 - DTO ",
+                    "file": "pages/folder/dto"
+                },
+                {
+                    "id": "folder/structures",
+                    "mode": "menu",
+                    "title": "5 - Service ",
+                    "file": "pages/folder/service"
+                }
+            ]
+        },
+        {
+            "mode": "menu",
+            "title": "Naming Conventions",
+            "file": "pages/naming/index",
+            "menu": [
+                {
+                    "mode": "sparator"
+                },
+                {
+                    "id": "folder/naming",
+                    "mode": "menu",
+                    "title": "Folder Naming",
+                    "file": "pages/naming/folder/index",
+                    "menu": [
+                        {
+                            "mode": "sparator"
+                        },
+                        {
+                            "id": "naming/folder",
+                            "mode": "menu",
+                            "title": "1 - Feature ",
+                            "file": "pages/naming/folder/feature"
+                        },
+                        {
+                            "id": "naming/folder",
+                            "mode": "menu",
+                            "title": "2 - Other",
+                            "file": "pages/naming/folder/other-folder"
+                        }
+                    ]
+                },
+                {
+                    "id": "file/naming",
+                    "mode": "menu",
+                    "title": "File Naming",
+                    "file": "pages/naming/file/index",
+                    "menu": [
+                        {
+                            "mode": "sparator"
+                        },
+                        {
+                            "id": "naming/file",
+                            "mode": "menu",
+                            "title": "1 - Module ",
+                            "file": "pages/naming/file/module"
+                        },
+                        {
+                            "id": "naming/file",
+                            "mode": "menu",
+                            "title": "2 - Model ",
+                            "file": "pages/naming/file/model"
+                        },
+                        {
+                            "id": "naming/file",
+                            "mode": "menu",
+                            "title": "3 - Service ",
+                            "file": "pages/naming/file/service"
+                        },
+                        {
+                            "id": "naming/file",
+                            "mode": "menu",
+                            "title": "4 - Resolver ",
+                            "file": "pages/naming/file/resolver"
+                        },
+                        {
+                            "id": "naming/file",
+                            "mode": "menu",
+                            "title": "5 - Data Transfer Object ",
+                            "file": "pages/naming/file/dto"
+                        }
+                    ]
+                },
+                {
+                    "id": "code/naming",
+                    "mode": "menu",
+                    "title": "Code Naming",
+                    "file": "pages/naming/code/index",
+                    "menu": [
+                        {
+                            "mode": "sparator"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "1 - Database Name",
+                            "file": "pages/naming/code/database_name"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "2 - Database Schema",
+                            "file": "pages/naming/code/database_schema"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "3 - Table",
+                            "file": "pages/naming/code/table"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "4 - Class",
+                            "file": "pages/naming/code/class"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "5 - Function",
+                            "file": "pages/naming/code/function"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "6 - GraphQL Object",
+                            "file": "pages/naming/code/graphQLObject"
+                        },
+                        {
+                            "id": "naming/code",
+                            "mode": "menu",
+                            "title": "7 - Variable",
+                            "file": "pages/naming/code/variable"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "mode": "menu",
+            "title": "Data Workflow",
+            "file": "pages/workflow/index",
+            "menu": [
+                {
+                    "mode": "sparator"
+                }
+            ]
+        }
+    ]
+}

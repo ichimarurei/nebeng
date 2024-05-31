@@ -1,10 +1,12 @@
 'use server'
 
+import Image from 'next/image'
+
 import { PUBLIC_INFORMATION_CONTENT } from '@/app/ppid/home/$action/constant'
 
 export async function SE_HomePublicInformationSection() {
     return (
-        <section className="bg-[#dce6f2] mt-20">
+        <section className="bg-[#dce6f2] mt-10 md:mt-6">
             <div className="w-full container mx-auto px-16 md:px-24 xl:px-36 p-14">
                 <p className="text-[2rem] font-normal text-center">
                     Keterbukaan Informasi Publik
@@ -17,8 +19,12 @@ export async function SE_HomePublicInformationSection() {
                         >
                             <div className="flex flex-col gap-8 justify-center h-full items-center text-white text-m-semibold uppercase">
                                 <div className="w-20">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img src={item.icon} alt={item.title} />
+                                    <Image
+                                        width={80}
+                                        height={80}
+                                        src={item.icon}
+                                        alt={item.title}
+                                    />
                                 </div>
                                 <p>{item.title}</p>
                             </div>

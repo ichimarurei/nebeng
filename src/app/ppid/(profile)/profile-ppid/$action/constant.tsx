@@ -1,6 +1,6 @@
 export const BANNER_PROFILE_PPID = {
     title: 'Profile PPID',
-    image_src: '/images/profile/profile-ppid.jpg',
+    image_src: '/images/profile/banner-profile-ppid.jpg',
 }
 
 export const BREADCRUMB_PROFILE_PPID_LABEL = [

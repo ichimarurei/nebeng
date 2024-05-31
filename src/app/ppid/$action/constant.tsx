@@ -74,7 +74,7 @@ const PROFILE_MENU_ITEMS: Array<T_BaseMenuItem> = [
     },
     {
         title: 'Vision & Mission',
-        url: '',
+        url: '/vision-mission',
     },
     {
         title: 'Structure Organization',
@@ -82,11 +82,11 @@ const PROFILE_MENU_ITEMS: Array<T_BaseMenuItem> = [
     },
     {
         title: 'Duties and Authorities',
-        url: '',
+        url: 'duties-authorities',
     },
     {
         title: 'PPID Wilayah',
-        url: '',
+        url: '/ppid-region',
     },
 ]
 

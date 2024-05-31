@@ -21,13 +21,15 @@ export default function Breadcrumb({ breadrumbList }: T_BreadcrumbProps) {
                     >
                         {itemLabel.label}
                     </li>
-                    {index !== breadrumbList.length - 1 && (
-                        <ChevronRightIcon
-                            width={16}
-                            height={16}
-                            className="stroke-blue-primary"
-                        />
-                    )}
+                    <span>
+                        {index !== breadrumbList.length - 1 && (
+                            <ChevronRightIcon
+                                width={16}
+                                height={16}
+                                className="stroke-blue-primary"
+                            />
+                        )}
+                    </span>
                 </Link>
             ))}
         </ul>
@@ -36,7 +38,7 @@ export default function Breadcrumb({ breadrumbList }: T_BreadcrumbProps) {
 
 const styles = {
     container:
-        'flex items-center text-m-regular text-gray-primary border-b justify-center py-4',
+        'flex items-center text-m-regular text-gray-primary border-b justify-center py-4 mx-4',
     link: 'flex items-center gap-1',
-    label: 'hover:text-blue-primary hover:border-b-blue-primary border-b border-b-white text-ellipsis overflow-hidden ',
+    label: 'hover:text-blue-primary hover:border-b-blue-primary border-b border-b-white truncate w-20 sm:w-full  ',
 }

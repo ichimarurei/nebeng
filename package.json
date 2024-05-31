@@ -10,7 +10,7 @@
         "lint:fix": "eslint src --fix && npm format",
         "type-check": "tsc",
         "check:turbo": "npx turbo@latest lint type-check",
-        "format": "prettier --write src",
+        "format": "prettier --check --write src",
         "obfuscate": "next build; node server/obfuscator.js",
         "purger": "node server/cache-purger.js",
         "prod:concurrent": "concurrently \"npm:start -- --port 1223\" \"npm:purger\"",

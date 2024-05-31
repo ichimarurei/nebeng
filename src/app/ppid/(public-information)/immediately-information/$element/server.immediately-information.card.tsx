@@ -4,7 +4,7 @@ import DocumentCard from '@/lib/global/components/document.card'
 
 export async function SE_ImmediatelyInformationCard() {
     return (
-        <div className=" my-20 gap-10 grid grid-cols-1">
+        <div className="my-20 gap-10 grid grid-cols-1">
             {IMMEDIATELY_INFORMATION_LIST.map((item, index) => (
                 <DocumentCard
                     key={`list-${index}`}
